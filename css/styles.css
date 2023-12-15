@@ -13,8 +13,8 @@ main{
     gap: 20px;
 }
 
-.seccion_1,
-.seccion_2{
+.son_1,
+.son_2{
     background-color: #3ea9eb;
     background-size: cover;
     border: 4px solid #d499f0;
@@ -37,4 +37,18 @@ button{
     font-size: 40px;
     color: rgb(0, 0, 0);
     font-weight: bold;
+}
+
+button:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(30, 253, 249, 0.7);
+    transform: scale(1.1);
+}
+
+.estadisticas{
+    border: 1px solid #fff;
+    height: 105px;
+    border-radius: 5px;
+    padding: 10px 30px;
+    box-sizing: border-box;
 }
