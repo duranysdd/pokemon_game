@@ -24,6 +24,28 @@ function contarTiempo(){
     tiempoRegresivoId = setInterval(() => {
         timer --;
         mostrarTiempo.innerHTML = `Tiempo : ${timer} segundos`;
-        if(timer == 0)
-    })
+        if(timer == 0){
+            clearInterval(tiempoRegresivoId);
+            bloquearTargetas();
+            //audios
+        }
+
+    },1000);
+
+}
+
+function bloquearTargetas(){
+    for(let i=0; i<=15; i++){
+        let tarjetaBloqueada = document.getElementById(i);
+        tarjetaBloqueada.innerHTML = `<img src="/img/${numeros[i]}.png"> `;
+        tarjetaBloqueada.disabled = true;
+    }
+}
+
+//principal_F
+
+function destapar(id){
+    if(temporizador == false){
+        
+    }
 }
