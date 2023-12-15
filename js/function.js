@@ -60,5 +60,28 @@ function destapar(id){
         segundoResultado = numeros[id];
         tarjeta2.innerHTML = `<img src="/img/${segundoResultado}.png">`;
         tarjeta2.disabled = true;
+        movimientos ++;
+        mostrarMovimientos.innerHTML = `movimientos: ${movimientos}`;
+
+
+        if(primerResultado == segundoResultado){
+            tarjetasDestapadas = 0;
+
+
+        aciertos++;
+        mostrarAciertos.innerHTML = `Aciertos: ${aciertos}`;
+        
+        if(aciertos == 8){
+            clearInterval(tiempoRegresivoId);
+            mostrarAciertos.innerHTML = `Aciertos: ${aciertos}`;
+            mostrarMovimientos.innerHTML = `movimientos: ${movimientos}`;
+            mostrarTiempo.innerHTML = `Fantastico: ${timerinicial - timer} segundos`;
+        }
+        } else{
+            setTimeout(() =>{
+                tarjeta1.innerHTML = 
+            })
+        }
     }
+
 }
