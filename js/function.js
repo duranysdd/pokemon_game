@@ -10,6 +10,8 @@ let timer = 50;
 let timerinicial = 50;
 let tiempoRegresivoId = null;
 
+let winAudio = new Audio(`/sounds/win.wav`)
+
 let mostrarMovimientos = document.getElementById("movimientos");
 
 let mostrarAciertos =  document.getElementById("aciertos");
@@ -79,8 +81,13 @@ function destapar(id){
         }
         } else{
             setTimeout(() =>{
-                tarjeta1.innerHTML = 
-            })
+                tarjeta1.innerHTML = ``;
+                tarjeta2.innerHTML = ``;
+                tarjeta1.disabled = false;
+                tarjeta2.disabled = false;
+                tarjetasDestapadas = 0;
+
+            },700);
         }
     }
 
