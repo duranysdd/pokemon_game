@@ -8,6 +8,7 @@ let aciertos = 0;
 let temporizador = false;
 let timer = 50;
 let timerinicial = 50;
+let tiempoRegresivoId = null;
 
 let mostrarMovimientos = document.getElementById("movimientos");
 
@@ -20,5 +21,9 @@ numeros = numeros.sort(() => {return Math.random() -0.5});
 
 
 function contarTiempo(){
-
+    tiempoRegresivoId = setInterval(() => {
+        timer --;
+        mostrarTiempo.innerHTML = `Tiempo : ${timer} segundos`;
+        if(timer == 0)
+    })
 }
