@@ -1,0 +1,13 @@
+body{
+    background-color: #99CFF0;
+    color: aliceblue;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main{
+    max-width: 1000px;
+    margin: 100px auto 50px;
+    display: grid;
+    
+}
